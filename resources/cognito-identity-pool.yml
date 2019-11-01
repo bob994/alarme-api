@@ -55,6 +55,11 @@ Resources:
                   - 'cognito-identity:*'
                 Resource: '*'
 
+              - Effect: 'Allow'
+                Action:
+                  - 'lambda:InvokeFunction'
+                Resource: '*'
+
               # Allow users to invoke our API
               - Effect: 'Allow'
                 Action:
