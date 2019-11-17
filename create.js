@@ -13,8 +13,9 @@ export async function main(event) {
       articleId: uuid.v1(),
       url: data.url,
       name: data.name,
-      createdAt: Date.now(),
-    },
+      priority: data.priority,
+      createdAt: Date.now()
+    }
   };
 
   try {
